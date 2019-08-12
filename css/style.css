@@ -1,0 +1,142 @@
+body{
+	padding: 0;
+	border: 0;
+
+}
+
+.jumbotron{
+	margin-top: 40px;
+}
+
+.spinner {
+  margin: 200px auto;
+  width: 50px;
+  height: 40px;
+  text-align: center;
+  font-size: 10px;
+  background-color: #fff;
+	z-index: 999999999;
+	position: fixed;
+}
+
+.spinner > div {
+  background-color: #333;
+  height: 100%;
+  width: 6px;
+  display: inline-block;
+  
+ animation: loader 0.8s linear infinite;
+	-webkit-animation: loader 0.8s linear infinite;
+	position: absolute;
+
+}
+
+.spinner .rect2 {
+  -webkit-animation-delay: -1.1s;
+  animation-delay: -1.1s;
+}
+
+.spinner .rect3 {
+  -webkit-animation-delay: -1.0s;
+  animation-delay: -1.0s;
+}
+
+.spinner .rect4 {
+  -webkit-animation-delay: -0.9s;
+  animation-delay: -0.9s;
+}
+
+.spinner .rect5 {
+  -webkit-animation-delay: -0.8s;
+  animation-delay: -0.8s;
+}
+
+@-webkit-keyframes sk-stretchdelay {
+  0%, 40%, 100% { -webkit-transform: scaleY(0.4) }  
+  20% { -webkit-transform: scaleY(1.0) }
+}
+
+@keyframes sk-stretchdelay {
+  0%, 40%, 100% { 
+    transform: scaleY(0.4);
+    -webkit-transform: scaleY(0.4);
+  }  20% { 
+    transform: scaleY(1.0);
+    -webkit-transform: scaleY(1.0);
+  }
+}
+
+
+
+#preloader{
+	background-color: #fff;
+	z-index: 999999999;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+
+}
+
+#load{
+	display: none;
+}
+
+/* ------ Main preloader div ------ */
+.preloader{
+	width: 40px;
+	height: 40px;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	margin-left: -13px;
+	margin-top: -13px;
+	animation: loader 0.8s linear infinite;
+	-webkit-animation: loader 0.8s linear infinite;
+}
+
+
+/* ------ Rotation styling ----- */
+@keyframes loader{
+	0%{
+		-webkit-transform: rotate(0deg);
+		transform: rotate(0deg);
+		border: 4px solid orange;
+		border-left-color: transparent;
+	}
+
+	50%{
+		-webkit-transform: rotate(180deg);
+		transform: rotate(180deg);
+		border: 4px solid orangered;
+		border-left-color: transparent;
+	}
+
+	100%{
+		-webkit-transform: rotate(360deg);
+		transform: rotate(360deg);
+		border: 4px solid #000;
+		border-left-color: transparent;
+	}
+}
+
+@-webkit-keyframes{
+	0%{
+		-webkit-transform: rotate(0deg);
+		border: 4px solid orange;
+		border-left-color: transparent;
+	}
+
+	50%{
+		-webkit-transform: rotate(180deg);
+		border: 4px solid orange;
+		border-left-color: transparent;
+	}
+
+	100%{
+		-webkit-transform: rotate(360deg);
+		border: 4px solid orange;
+		border-left-color: transparent;
+	}
+}

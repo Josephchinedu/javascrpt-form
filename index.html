@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Vanila Javascript</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-grid.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-reboot.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+<style>
+
+</style>
+</head>
+<body>
+	<div class="container" id="oif">
+		<div class="row">
+			<div class="col-md-6 offset-md-3">
+				<div class="jumbotron">
+					<form id="form">
+						<label>Name: </label>
+						<input type="name" name="name" placeholder="Your Full Name" class="form-control" id="name">
+						<label>Password: </label>
+						<input type="password" name="password" class="form-control" id="pass"><br>	
+					</form>
+					<button onclick="myFunction()" class="btn bg-danger text-white" onsubmit="reset()">Submit</button>
+
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+	<div id="load">
+		<!-- Loading Page -->
+		<div id="preloader">
+		  <div class="preloader"></div>
+	    </div>
+
+
+	    <!-- Thank you message -->
+	    <div class="container" id="q">
+		<div class="row">
+			<div class="col-md-6 offset-md-3">
+				<div class="jumbotron">
+					<h4 class="text-danger">Successful! <span></span> <span>&#128514;</span></h4>
+
+				</div>
+			</div>
+		</div>
+	</div>
+	</div>
+
+	
+	</div>
+
+<script>
+
+
+function myFunction() {
+	var oppa = document.getElementsByTagName('input').innerHTML;
+	var dde = document.getElementById("oif").style.display = "none";
+	var dd = document.getElementById("load").style.display = "block";
+	var nm = document.getElementById("name");
+	nm += " ";
+	var jj = document.getElementById("pass");
+	jj += " ";
+
+	if(oppa === string ) {
+		dd.style.display = "none";
+		return dd;
+	} else if(oppa > 0){
+		dd.style.display = "none";
+	};
+	
+
+};
+
+function reset() {
+	document.getElementById("form").reset();
+}
+
+
+ $(document).ready(function () {          
+
+            setTimeout(function() {
+                $('#load').slideUp("slow");
+            }, 5000);
+
+            if($('#load') === setTimeout()) {
+            	document.write('Welcome');
+            };
+});
+
+
+
+
+
+</script>
+
+
+<script src="js/jquery.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
